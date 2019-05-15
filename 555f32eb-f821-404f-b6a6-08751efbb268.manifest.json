@@ -1,0 +1,83 @@
+{
+  "id": "555f32eb-f821-404f-b6a6-08751efbb268",
+  "alias": "VisitorsWebPartWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "VisitorsWebPart"
+      },
+      "description": {
+        "default": "VisitorsWebPart description"
+      },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "VisitorsWebPart"
+      }
+    }
+  ],
+  "loaderConfig": {
+    "entryModuleId": "visitors-web-part-web-part",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "visitors-web-part-web-part": {
+        "type": "path",
+        "path": "dist/visitors-web-part-web-part.js"
+      },
+      "jquery": {
+        "type": "path",
+        "path": "node_modules/jquery/dist/jquery.min.js"
+      },
+      "jqueryui": {
+        "type": "path",
+        "path": "node_modules/jqueryui/jquery-ui.min.js"
+      },
+      "datatables": {
+        "type": "path",
+        "path": "node_modules/datatables/media/js/jquery.dataTables.min.js"
+      },
+      "VisitorsWebPartWebPartStrings": {
+        "defaultPath": "lib/webparts/visitorsWebPart/loc/en-us.js",
+        "type": "localizedPath",
+        "paths": {}
+      },
+      "@microsoft/sp-core-library": {
+        "type": "component",
+        "version": "1.8.1",
+        "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b"
+      },
+      "@microsoft/sp-webpart-base": {
+        "type": "component",
+        "version": "1.8.1",
+        "id": "974a7777-0990-4136-8fa6-95d80114c2e0"
+      },
+      "@microsoft/sp-property-pane": {
+        "type": "component",
+        "version": "1.8.1",
+        "id": "f9e737b7-f0df-4597-ba8c-3060f82380db"
+      },
+      "@microsoft/sp-http": {
+        "type": "component",
+        "version": "1.8.1",
+        "id": "c07208f0-ea3b-4c1a-9965-ac1b825211a6"
+      },
+      "@microsoft/sp-loader": {
+        "type": "component",
+        "version": "1.8.1",
+        "id": "1c6c9123-7aac-41f3-a376-3caea41ed83f"
+      }
+    }
+  }
+}
